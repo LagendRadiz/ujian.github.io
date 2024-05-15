@@ -3,352 +3,401 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Soal</title>
+    <link
+      rel="icon"
+      href="logo_buku.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <h1>Quizz Cihuy</h1>
-      <ul id="list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="c-humberger">
-        <svg
-          id="humberger"
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
-      </div>
-    </nav>
-
-    <main>
+    <div id="login" class="login">
       <span>
-        <h1>Quizz Cihuy</h1>
-        <h2>Seberapa nasionalisme nya lu</h2>
-        <p>Create By Joes*</p>
-        <a href="#page_soal">Start</a>
+        <h1>Tolong masukan nama lengkap anda</h1>
+        <input type="text" id="name_input" placeholder="Nama lengkap" />
+        <button onclick="lanjut()">Lanjut</button>
       </span>
-      <div class="figure">
-        <img src="doraemon.png" alt="Figure" />
-      </div>
-    </main>
-
-    <section id="page_soal" class="page_soal">
-      <h1>!!!Jangan Curang!!!</h1>
-      <div class="soal_container">
-        <!-- Soal 1 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>1.</h1>
-            <h1>Apa nama rumah adat tradisional dari Minangkabau?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option1" data-id="0" id="option1A" />
-              <label for="option1A">Joglo</label>
-            </div>
-            <div>
-              <input type="radio" name="option1" data-id="1" id="option1B" />
-              <label for="option1B">YTongkonan</label>
-            </div>
-            <div>
-              <input type="radio" name="option1" data-id="2" id="option1C" />
-              <label for="option1C">Gadang</label>
-            </div>
-            <div>
-              <input type="radio" name="option1" data-id="3" id="option1D" />
-              <label for="option1D">Limas</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 2 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>2.</h1>
-            <h1>
-              Siapakah pahlawan nasional yang dikenal dengan julukan "Ayam
-              Jantan dari Timur"?
-            </h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option2" data-id="0" id="option2A" />
-              <label for="option2A">Sultan Hasanuddin</label>
-            </div>
-            <div>
-              <input type="radio" name="option2" data-id="1" id="option2B" />
-              <label for="option2B">Pattimura</label>
-            </div>
-            <div>
-              <input type="radio" name="option2" data-id="2" id="option2C" />
-              <label for="option2C">Tuanku Imam Bonjol</label>
-            </div>
-            <div>
-              <input type="radio" name="option2" data-id="3" id="option2D" />
-              <label for="option2D">Cut Nyak Dien</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 3 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>3.</h1>
-            <h1>Pada tahun berapakah Sumpah Pemuda dikumandangkan?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option3" data-id="0" id="option3A" />
-              <label for="option3A">1928</label>
-            </div>
-            <div>
-              <input type="radio" name="option3" data-id="1" id="option3B" />
-              <label for="option3B">1945</label>
-            </div>
-            <div>
-              <input type="radio" name="option3" data-id="2" id="option3C" />
-              <label for="option3C">1908</label>
-            </div>
-            <div>
-              <input type="radio" name="option3" data-id="3" id="option3D" />
-              <label for="option3D">1949</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 4 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>4.</h1>
-            <h1>Apa nama tari tradisional yang berasal dari Bali?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option4" data-id="0" id="option4A" />
-              <label for="option4A">Tari Jaipong</label>
-            </div>
-            <div>
-              <input type="radio" name="option4" data-id="1" id="option4B" />
-              <label for="option4B">Tari Piring</label>
-            </div>
-            <div>
-              <input type="radio" name="option4" data-id="2" id="option4C" />
-              <label for="option4C">Tari Kecak</label>
-            </div>
-            <div>
-              <input type="radio" name="option4" data-id="3" id="option4D" />
-              <label for="option4D">Tari Saman</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 5 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>5.</h1>
-            <h1>Siapakah penulis novel "Laskar Pelangi"?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option5" data-id="0" id="option5A" />
-              <label for="option5A">Andrea Hirata</label>
-            </div>
-            <div>
-              <input type="radio" name="option5" data-id="1" id="option5B" />
-              <label for="option5B">Pramoedya Ananta Toer</label>
-            </div>
-            <div>
-              <input type="radio" name="option5" data-id="2" id="option5C" />
-              <label for="option5C">Ayu Utami</label>
-            </div>
-            <div>
-              <input type="radio" name="option5" data-id="3" id="option5D" />
-              <label for="option5D">Eka Kurniawan</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 6 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>6.</h1>
-            <h1>Di provinsi manakah Danau Sentani berada?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option6" data-id="0" id="option6A" />
-              <label for="option6A">Papua</label>
-            </div>
-            <div>
-              <input type="radio" name="option6" data-id="1" id="option6B" />
-              <label for="option6B">Kalimantan Barat</label>
-            </div>
-            <div>
-              <input type="radio" name="option6" data-id="2" id="optio6C" />
-              <label for="option6C">Sulawesi Selatan</label>
-            </div>
-            <div>
-              <input type="radio" name="option6" data-id="3" id="option6D" />
-              <label for="option6D">Nusa Tenggara Timur</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 7 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>7.</h1>
-            <h1>Apa nama senjata tradisional yang berasal dari Aceh?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option7" data-id="0" id="option7A" />
-              <label for="option7A">Mandau</label>
-            </div>
-            <div>
-              <input type="radio" name="option7" data-id="1" id="option7B" />
-              <label for="option7B">Rencong</label>
-            </div>
-            <div>
-              <input type="radio" name="option7" data-id="2" id="option7C" />
-              <label for="option7C">Kujang</label>
-            </div>
-            <div>
-              <input type="radio" name="option7" data-id="3" id="option7D" />
-              <label for="option7D">Keris</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 8 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>8.</h1>
-            <h1>
-              Siapakah presiden Indonesia yang menjabat pada masa reformasi
-              pertama kali?
-            </h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option8" data-id="0" id="option8A" />
-              <label for="option8A">Soeharto</label>
-            </div>
-            <div>
-              <input type="radio" name="option8" data-id="1" id="option8B" />
-              <label for="option8B">Abdurrahman Wahid</label>
-            </div>
-            <div>
-              <input type="radio" name="option8" data-id="2" id="option8C" />
-              <label for="option8C">Megawati</label>
-            </div>
-            <div>
-              <input type="radio" name="option8" data-id="3" id="option8D" />
-              <label for="option8D">Habibie</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 9 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>9.</h1>
-            <h1>Pulau Komodo terletak di provinsi mana?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option9" data-id="0" id="option9A" />
-              <label for="option9A">Bali</label>
-            </div>
-            <div>
-              <input type="radio" name="option9" data-id="1" id="option9B" />
-              <label for="option9B">Nusa Tenggara Timur</label>
-            </div>
-            <div>
-              <input type="radio" name="option9" data-id="2" id="option9C" />
-              <label for="option9C">Nusa Tenggara Barat</label>
-            </div>
-            <div>
-              <input type="radio" name="option9" data-id="3" id="option9D" />
-              <label for="option9D">Sulawesi Selatan</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soal 10 -->
-        <div class="soal-ujian">
-          <p class="level">Easy</p>
-          <div class="soal">
-            <h1>10.</h1>
-            <h1>Pada upacara adat apa terdapat tradisi "Ngaben"?</h1>
-          </div>
-          <div class="pilihan">
-            <div>
-              <input type="radio" name="option10" data-id="0" id="option10A" />
-              <label for="option10A">Pernikahan adat Minangkabau</label>
-            </div>
-            <div>
-              <input type="radio" name="option10" data-id="1" id="option10B" />
-              <label for="option10B">Pesta panen adat Toraja</label>
-            </div>
-            <div>
-              <input type="radio" name="option10" data-id="2" id="option10C" />
-              <label for="option10C">Pemakaman adat Bali</label>
-            </div>
-            <div>
-              <input type="radio" name="option10" data-id="3" id="option10D" />
-              <label for="option10D">Peresmian rumah adat Batak</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="c-kalkulasi">
-      <button onclick="selesai()">Selesai</button>
     </div>
 
-    <div class="c-hasil">
-      <div class="form-hasil">
-        <h1>SELAMAT</h1>
-        <h2>Ujian sudah selesai</h2>
-        <p id="result">nilai kamu: 100</p>
-        <span id="img-manipulator">
-          <img src="mode_cupu-removebg-preview.png" alt="..." id="mode_cupu" />
-          <img
-            src="mode_pusing-removebg-preview (1).png"
-            alt="!!!"
-            id="mode_manipulator"
-          />
+    <div id="big_container" class="big-container">
+      <nav>
+        <h1>Quizz Cihuy</h1>
+        <ul id="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <div class="c-humberger">
+          <svg
+            id="humberger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+      </nav>
+
+      <main>
+        <span>
+          <h1>Quizz Cihuy</h1>
+          <h2>Seberapa nasionalisme nya lu</h2>
+          <p>Create By Joes*</p>
         </span>
+        <a href="#page_soal">Start</a>
+      </main>
+
+      <section id="page_soal" class="page_soal">
+        <h1>!!!Jangan Curang!!!</h1>
+        <div class="soal_container">
+          <!-- Soal 1 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>1.</h1>
+              <h1>Apa nama rumah adat tradisional dari Minangkabau?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option1" data-id="0" id="option1A" />
+                <label for="option1A">Joglo</label>
+              </div>
+              <div>
+                <input type="radio" name="option1" data-id="1" id="option1B" />
+                <label for="option1B">YTongkonan</label>
+              </div>
+              <div>
+                <input type="radio" name="option1" data-id="2" id="option1C" />
+                <label for="option1C">Gadang</label>
+              </div>
+              <div>
+                <input type="radio" name="option1" data-id="3" id="option1D" />
+                <label for="option1D">Limas</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 2 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>2.</h1>
+              <h1>
+                Siapakah pahlawan nasional yang dikenal dengan julukan "Ayam
+                Jantan dari Timur"?
+              </h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option2" data-id="0" id="option2A" />
+                <label for="option2A">Sultan Hasanuddin</label>
+              </div>
+              <div>
+                <input type="radio" name="option2" data-id="1" id="option2B" />
+                <label for="option2B">Pattimura</label>
+              </div>
+              <div>
+                <input type="radio" name="option2" data-id="2" id="option2C" />
+                <label for="option2C">Tuanku Imam Bonjol</label>
+              </div>
+              <div>
+                <input type="radio" name="option2" data-id="3" id="option2D" />
+                <label for="option2D">Cut Nyak Dien</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 3 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>3.</h1>
+              <h1>Pada tahun berapakah Sumpah Pemuda dikumandangkan?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option3" data-id="0" id="option3A" />
+                <label for="option3A">1928</label>
+              </div>
+              <div>
+                <input type="radio" name="option3" data-id="1" id="option3B" />
+                <label for="option3B">1945</label>
+              </div>
+              <div>
+                <input type="radio" name="option3" data-id="2" id="option3C" />
+                <label for="option3C">1908</label>
+              </div>
+              <div>
+                <input type="radio" name="option3" data-id="3" id="option3D" />
+                <label for="option3D">1949</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 4 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>4.</h1>
+              <h1>Apa nama tari tradisional yang berasal dari Bali?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option4" data-id="0" id="option4A" />
+                <label for="option4A">Tari Jaipong</label>
+              </div>
+              <div>
+                <input type="radio" name="option4" data-id="1" id="option4B" />
+                <label for="option4B">Tari Piring</label>
+              </div>
+              <div>
+                <input type="radio" name="option4" data-id="2" id="option4C" />
+                <label for="option4C">Tari Kecak</label>
+              </div>
+              <div>
+                <input type="radio" name="option4" data-id="3" id="option4D" />
+                <label for="option4D">Tari Saman</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 5 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>5.</h1>
+              <h1>Siapakah penulis novel "Laskar Pelangi"?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option5" data-id="0" id="option5A" />
+                <label for="option5A">Andrea Hirata</label>
+              </div>
+              <div>
+                <input type="radio" name="option5" data-id="1" id="option5B" />
+                <label for="option5B">Pramoedya Ananta Toer</label>
+              </div>
+              <div>
+                <input type="radio" name="option5" data-id="2" id="option5C" />
+                <label for="option5C">Ayu Utami</label>
+              </div>
+              <div>
+                <input type="radio" name="option5" data-id="3" id="option5D" />
+                <label for="option5D">Eka Kurniawan</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 6 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>6.</h1>
+              <h1>Di provinsi manakah Danau Sentani berada?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option6" data-id="0" id="option6A" />
+                <label for="option6A">Papua</label>
+              </div>
+              <div>
+                <input type="radio" name="option6" data-id="1" id="option6B" />
+                <label for="option6B">Kalimantan Barat</label>
+              </div>
+              <div>
+                <input type="radio" name="option6" data-id="2" id="optio6C" />
+                <label for="option6C">Sulawesi Selatan</label>
+              </div>
+              <div>
+                <input type="radio" name="option6" data-id="3" id="option6D" />
+                <label for="option6D">Nusa Tenggara Timur</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 7 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>7.</h1>
+              <h1>Apa nama senjata tradisional yang berasal dari Aceh?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option7" data-id="0" id="option7A" />
+                <label for="option7A">Mandau</label>
+              </div>
+              <div>
+                <input type="radio" name="option7" data-id="1" id="option7B" />
+                <label for="option7B">Rencong</label>
+              </div>
+              <div>
+                <input type="radio" name="option7" data-id="2" id="option7C" />
+                <label for="option7C">Kujang</label>
+              </div>
+              <div>
+                <input type="radio" name="option7" data-id="3" id="option7D" />
+                <label for="option7D">Keris</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 8 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>8.</h1>
+              <h1>
+                Siapakah presiden Indonesia yang menjabat pada masa reformasi
+                pertama kali?
+              </h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option8" data-id="0" id="option8A" />
+                <label for="option8A">Soeharto</label>
+              </div>
+              <div>
+                <input type="radio" name="option8" data-id="1" id="option8B" />
+                <label for="option8B">Abdurrahman Wahid</label>
+              </div>
+              <div>
+                <input type="radio" name="option8" data-id="2" id="option8C" />
+                <label for="option8C">Megawati</label>
+              </div>
+              <div>
+                <input type="radio" name="option8" data-id="3" id="option8D" />
+                <label for="option8D">Habibie</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 9 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>9.</h1>
+              <h1>Pulau Komodo terletak di provinsi mana?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input type="radio" name="option9" data-id="0" id="option9A" />
+                <label for="option9A">Bali</label>
+              </div>
+              <div>
+                <input type="radio" name="option9" data-id="1" id="option9B" />
+                <label for="option9B">Nusa Tenggara Timur</label>
+              </div>
+              <div>
+                <input type="radio" name="option9" data-id="2" id="option9C" />
+                <label for="option9C">Nusa Tenggara Barat</label>
+              </div>
+              <div>
+                <input type="radio" name="option9" data-id="3" id="option9D" />
+                <label for="option9D">Sulawesi Selatan</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soal 10 -->
+          <div class="soal-ujian">
+            <p class="level">Easy</p>
+            <div class="soal">
+              <h1>10.</h1>
+              <h1>Pada upacara adat apa terdapat tradisi "Ngaben"?</h1>
+            </div>
+            <div class="pilihan">
+              <div>
+                <input
+                  type="radio"
+                  name="option10"
+                  data-id="0"
+                  id="option10A"
+                />
+                <label for="option10A">Pernikahan adat Minangkabau</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="option10"
+                  data-id="1"
+                  id="option10B"
+                />
+                <label for="option10B">Pesta panen adat Toraja</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="option10"
+                  data-id="2"
+                  id="option10C"
+                />
+                <label for="option10C">Pemakaman adat Bali</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="option10"
+                  data-id="3"
+                  id="option10D"
+                />
+                <label for="option10D">Peresmian rumah adat Batak</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="c-kalkulasi">
+        <button onclick="selesai()">Selesai</button>
       </div>
+
+      <div class="c-hasil">
+        <div class="form-hasil">
+          <form name="submit-to-google-sheet">
+            <h1>Selamat</h1>
+            <input type="text" name="nama" id="get_name" readonly />
+            <input type="text" name="nilai" id="nilai" readonly />
+            <button type="submit" onclick="submit()">Send</button>
+          </form>
+          <span id="img-manipulator">
+            <img
+              src="mode_cupu-removebg-preview.png"
+              alt="..."
+              id="mode_cupu"
+            />
+            <img
+              src="mode_pusing-removebg-preview (1).png"
+              alt="!!!"
+              id="mode_manipulator"
+            />
+          </span>
+        </div>
+      </div>
+
+      <footer></footer>
     </div>
 
-
-    <footer>
-
-    </footer>
     <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxjljPMhZd9c63vWpNR9RuRUKxLwYXkS3LHf_X0KbHxNQ5qEbTCvLliGx4S067JXrKh/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
